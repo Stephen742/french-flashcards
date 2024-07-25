@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .flashcards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        .flashcard {
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .english {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .speak-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .speak-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="flashcards">
+        <div class="flashcard">
+            <div class="english">Hello</div>
+            <div class="french">Bonjour</div>
+            <button class="speak-button" onclick="speak('Bonjour')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Goodbye</div>
+            <div class="french">Au revoir</div>
+            <button class="speak-button" onclick="speak('Au revoir')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Please</div>
+            <div class="french">S'il vous plaît</div>
+            <button class="speak-button" onclick="speak('S\'il vous plaît')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Thank you</div>
+            <div class="french">Merci</div>
+            <button class="speak-button" onclick="speak('Merci')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Yes</div>
+            <div class="french">Oui</div>
+            <button class="speak-button" onclick="speak('Oui')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">No</div>
+            <div class="french">Non</div>
+            <button class="speak-button" onclick="speak('Non')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Excuse me</div>
+            <div class="french">Excusez-moi</div>
+            <button class="speak-button" onclick="speak('Excusez-moi')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Book</div>
+            <div class="french">Livre</div>
+            <button class="speak-button" onclick="speak('Livre')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Pen</div>
+            <div class="french">Stylo</div>
+            <button class="speak-button" onclick="speak('Stylo')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Chair</div>
+            <div class="french">Chaise</div>
+            <button class="speak-button" onclick="speak('Chaise')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Table</div>
+            <div class="french">Table</div>
+            <button class="speak-button" onclick="speak('Table')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Backpack</div>
+            <div class="french">Sac à dos</div>
+            <button class="speak-button" onclick="speak('Sac à dos')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Door</div>
+            <div class="french">Porte</div>
+            <button class="speak-button" onclick="speak('Porte')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Window</div>
+            <div class="french">Fenêtre</div>
+            <button class="speak-button" onclick="speak('Fenêtre')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">One</div>
+            <div class="french">Un</div>
+            <button class="speak-button" onclick="speak('Un')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Two</div>
+            <div class="french">Deux</div>
+            <button class="speak-button" onclick="speak('Deux')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Three</div>
+            <div class="french">Trois</div>
+            <button class="speak-button" onclick="speak('Trois')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Four</div>
+            <div class="french">Quatre</div>
+            <button class="speak-button" onclick="speak('Quatre')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Five</div>
+            <div class="french">Cinq</div>
+            <button class="speak-button" onclick="speak('Cinq')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Six</div>
+            <div class="french">Six</div>
+            <button class="speak-button" onclick="speak('Six')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Seven</div>
+            <div class="french">Sept</div>
+            <button class="speak-button" onclick="speak('Sept')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Eight</div>
+            <div class="french">Huit</div>
+            <button class="speak-button" onclick="speak('Huit')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Nine</div>
+            <div class="french">Neuf</div>
+            <button class="speak-button" onclick="speak('Neuf')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Ten</div>
+            <div class="french">Dix</div>
+            <button class="speak-button" onclick="speak('Dix')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Red</div>
+            <div class="french">Rouge</div>
+            <button class="speak-button" onclick="speak('Rouge')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Blue</div>
+            <div class="french">Bleu</div>
+            <button class="speak-button" onclick="speak('Bleu')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Green</div>
+            <div class="french">Vert</div>
+            <button class="speak-button" onclick="speak('Vert')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Yellow</div>
+            <div class="french">Jaune</div>
+            <button class="speak-button" onclick="speak('Jaune')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Black</div>
+            <div class="french">Noir</div>
+            <button class="speak-button" onclick="speak('Noir')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">White</div>
+            <div class="french">Blanc</div>
+            <button class="speak-button" onclick="speak('Blanc')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Orange</div>
+            <div class="french">Orange</div>
+            <button class="speak-button" onclick="speak('Orange')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Mother</div>
+            <div class="french">Mère</div>
+            <button class="speak-button" onclick="speak('Mère')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Father</div>
+            <div class="french">Père</div>
+            <button class="speak-button" onclick="speak('Père')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Brother</div>
+            <div class="french">Frère</div>
+            <button class="speak-button" onclick="speak('Frère')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Sister</div>
+            <div class="french">Sœur</div>
+            <button class="speak-button" onclick="speak('Sœur')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Grandmother</div>
+            <div class="french">Grand-mère</div>
+            <button class="speak-button" onclick="speak('Grand-mère')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="english">Grandfather</div>
+            <div class="french">Grand-père</div>
+            <button class="speak-button" onclick="speak('Grand-père')">Speak</button>
+        </div>
+    </div>
+
+    <script>
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'fr-FR'; // Set the language to French
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>
