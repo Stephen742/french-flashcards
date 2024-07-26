@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Sounds Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .flashcards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        .flashcard {
+            border: 2px solid blue;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .sound {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>French Sounds Flashcards</h1>
+    <div class="flashcards">
+        <div class="flashcard">
+            <div class="sound">on</div>
+            <div class="example">bon (good)</div>
+            <button onclick="speak('bon')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">en</div>
+            <div class="example">enfant (child)</div>
+            <button onclick="speak('enfant')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">an</div>
+            <div class="example">manger (to eat)</div>
+            <button onclick="speak('manger')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">ou</div>
+            <div class="example">soupe (soup)</div>
+            <button onclick="speak('soupe')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">ai</div>
+            <div class="example">aimer (to love)</div>
+            <button onclick="speak('aimer')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">au</div>
+            <div class="example">chaud (hot)</div>
+            <button onclick="speak('chaud')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">eu</div>
+            <div class="example">neuf (nine)</div>
+            <button onclick="speak('neuf')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">oi</div>
+            <div class="example">moi (me)</div>
+            <button onclick="speak('moi')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">ui</div>
+            <div class="example">nuit (night)</div>
+            <button onclick="speak('nuit')">Speak</button>
+        </div>
+        <div class="flashcard">
+            <div class="sound">é</div>
+            <div class="example">école (school)</div>
+            <button onclick="speak('école')">Speak</button>
+        </div>
+    </div>
+
+    <script>
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'fr-FR';
+            speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>
